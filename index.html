@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanmay Devra - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h1>Tanmay Devra</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Landing Section -->
+    <section id="landing">
+        <div class="intro">
+            <h2>Hi, I'm Tanmay Devra</h2>
+            <p>I'm a Computer Science Enthusiast.</p>
+            <button onclick="scrollToSection('portfolio')">View My Work</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome! I’m Tanmay Devra, a tech enthusiast and a second-year Computer Science Engineering student. I enjoy creating projects that solve real-world problems and have experience in programming and web design.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Hostel Management System</h3>
+                <p>A C-based system for managing student accommodation.</p>
+            </div>
+            <div class="project">
+                <h3>Food Management System</h3>
+                <p>A Java-based application to manage food inventory and orders.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Tanmay Devra" required id="name">
+            <input type="email" placeholder="td4153@srmist.edu.in" required id="email">
+            <textarea placeholder="Your Message" required id="message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="responseMessage" style="display:none; color: green;">Thank you! Your message has been sent.</div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
