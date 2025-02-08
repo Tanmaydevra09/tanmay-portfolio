@@ -30,3 +30,13 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         alert('Please fill in all fields.');
     }
 });
+
+// Toggle the contact details visibility
+function toggleContactInfo() {
+    const contactDetails = document.getElementById('contactDetails');
+    if (contactDetails.style.display === 'block') {
+        contactDetails.style.display = 'none';
+    } else {
+        contactDetails.style.display = 'block';
+    }
+}
