@@ -3,128 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Certifications & Projects</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                </ul>
-            </div>
-        </div>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">My Portfolio</div>
+        <ul>
+            <li><a href="#" onclick="scrollToSection('about')">About</a></li>
+            <li><a href="#" onclick="scrollToSection('portfolio')">Portfolio</a></li>
+            <li><a href="#" onclick="scrollToSection('contact')">Contact</a></li>
+        </ul>
     </nav>
 
+    <!-- Landing Section -->
+    <section id="landing">
+        <div class="intro">
+            <h2>Welcome to My Portfolio!</h2>
+            <button onclick="scrollToSection('about')">Learn More</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate developer with expertise in web technologies and programming languages. I love solving complex problems and building meaningful projects.</p>
+    </section>
+
     <!-- Certifications Section -->
-    <section id="certifications" class="container mt-5">
-        <h2 class="text-center mb-4">Certifications</h2>
-        <div class="row">
-            <div class="col-md-6 col-lg-3">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Modern Python 3 Bootcamp</h5>
-                        <p class="card-text">Udemy</p>
-                    </div>
-                </div>
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>The Modern Python 3 Bootcamp (Udemy)</li>
+            <li>Certificate of Accomplishment in problem solving (Hacker Rank)</li>
+            <li>Programming in Java (Nptel)</li>
+        </ul>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project">
+                <h3>Notes Making Web Application</h3>
+                <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Bootstrap, Flask, SQLite</p>
+                <p><strong>Aim:</strong> A versatile platform for creating and managing digital notes.</p>
+                <p><strong>Benefits:</strong> Edit, delete, and manage notes efficiently.</p>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Problem Solving</h5>
-                        <p class="card-text">HackerRank - Certificate of Accomplishment</p>
-                    </div>
-                </div>
+            <!-- Project 2 -->
+            <div class="project">
+                <h3>Hostel Management System</h3>
+                <p><strong>Tech Stack:</strong> Java Swing, Java, MySQL</p>
+                <p><strong>Aim:</strong> Manage student accommodations and related administrative tasks.</p>
+                <p><strong>Benefits:</strong> Automated ID handling and user-friendly interface.</p>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">IEI Membership</h5>
-                        <p class="card-text">Institution of Engineers (India)</p>
-                    </div>
-                </div>
+            <!-- Project 3 -->
+            <div class="project">
+                <h3>Pet Adoption Management</h3>
+                <p><strong>Tech Stack:</strong> MySQL, C++</p>
+                <p><strong>Aim:</strong> Streamline the pet adoption process.</p>
+                <p><strong>Benefits:</strong> Centralized pet database and improved adoption process.</p>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Programming in Java</h5>
-                        <p class="card-text">NPTEL Certified</p>
-                    </div>
-                </div>
+            <!-- Project 4 -->
+            <div class="project">
+                <h3>Chess-Bot</h3>
+                <p><strong>Tech Stack:</strong> Pygame, Python</p>
+                <p><strong>Aim:</strong> A chess game that allows you to play against an AI or another player.</p>
+                <p><strong>Benefits:</strong> Real-time gameplay with an AI opponent.</p>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="container mt-5">
-        <h2 class="text-center mb-4">Projects</h2>
-        <div class="row">
-            <!-- Notes Making Web App -->
-            <div class="col-md-6">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Notes Making Web App</h5>
-                        <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Bootstrap, Flask, SQLite</p>
-                        <p><strong>Aim:</strong> Organize and manage digital notes efficiently.</p>
-                        <p><strong>Benefits:</strong> Edit, delete, and restrict empty notes.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Hostel Management System -->
-            <div class="col-md-6">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Hostel Management System</h5>
-                        <p><strong>Tech Stack:</strong> Java Swing, MySQL</p>
-                        <p><strong>Aim:</strong> Manage student accommodations and admin tasks.</p>
-                        <p><strong>Benefits:</strong> Automated ID handling, student info management.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Pet Adoption Management -->
-            <div class="col-md-6">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Pet Adoption Management</h5>
-                        <p><strong>Tech Stack:</strong> C++, MySQL</p>
-                        <p><strong>Aim:</strong> Streamline pet adoption processes.</p>
-                        <p><strong>Benefits:</strong> Centralized pet database, responsible pet ownership.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Chess Bot -->
-            <div class="col-md-6">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Chess Bot</h5>
-                        <p><strong>Tech Stack:</strong> Python (Pygame)</p>
-                        <p><strong>Aim:</strong> Provide a chess-playing experience with AI and human modes.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Tic-Tac-Toe Backend -->
-            <div class="col-md-6">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Tic-Tac-Toe Backend</h5>
-                        <p><strong>Tech Stack:</strong> Java</p>
-                        <p><strong>Aim:</strong> Implement game logic with board management.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Tanmay Devra" required>
+            <input type="email" id="email" placeholder="tanmaydevra09@gmail.com" required>
+            <textarea id="message" placeholder="Hello!" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div id="responseMessage" style="display: none;"></div>
     </section>
 
-    <!-- Bootstrap Script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Floating Contact Button -->
+    <div id="contactInfo" class="contact-info">
+        <button onclick="toggleContactInfo()">Contact Me</button>
+        <div id="contactDetails" class="contact-details">
+            <p>Name: Tanmay Devra</p>
+            <p>Phone: 7498039374</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
