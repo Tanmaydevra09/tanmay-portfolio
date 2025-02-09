@@ -79,12 +79,24 @@ button:hover {
     background: #0097a7;
 }
 
-/* About Section */
+/* About, Portfolio & Contact Sections */
 #about, #portfolio, #contact {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
     padding: 3rem 1rem;
+}
+
+/* Certifications Section */
+#certifications {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+#certifications ul {
+    display: inline-block;
+    text-align: left;
+    list-style-position: inside;
 }
 
 /* Projects Grid */
@@ -173,10 +185,15 @@ form button:hover {
     font-size: 1rem;
 }
 
+/* Responsive Design */
 @media screen and (max-width: 768px) {
     .contact-info {
         bottom: 10px;
         right: 10px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
     }
 }
 
